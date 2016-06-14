@@ -32,4 +32,13 @@ class InheritedResource : Base
     # Gets the resource's current state.
  
 
+
+
+
+
+
+
+
 }
+
+

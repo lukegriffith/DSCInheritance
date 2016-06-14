@@ -13,7 +13,7 @@ configuration TestingInherited {
         Ensure = 'Present'
         SettingName = "This Setting"
         Enforce = 'Always'
-
+        guid = [guid]::newGuid()
 
     }
 }

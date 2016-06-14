@@ -19,6 +19,9 @@ enum Enforce
 class Base
 {
 
+    [DscProperty(Key)]
+    [string]$guid;
+
     # A DSC resource must define at least one key property.
     [DscProperty(Mandatory)]
     [Enforce] $Enforce
