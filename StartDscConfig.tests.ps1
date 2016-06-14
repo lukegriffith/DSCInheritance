@@ -10,7 +10,7 @@ Describe "InheritedResource" {
 
         it 'Has build mof from configuration.' {
 
-            Get-item -Path $PSScriptRoot\Testinginherited\localhost.mof | should be $true
+            Get-item -Path $PSScriptRoot\Artifacts\TestingInherited\localhost.mof | should be $true
         }
     }
 

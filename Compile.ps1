@@ -18,6 +18,7 @@ configuration TestingInherited {
     }
 }
 
-
-
+pushd
+cd $PSScriptRoot\Artifacts
 TestingInherited
+popd
