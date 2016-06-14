@@ -7,3 +7,16 @@ Task -name PreDeployment -action {
 
 
 }
+
+
+Task -name Test -action {
+
+
+    Invoke-Pester -Script $PSScriptRoot\StartDscConfig.tests.ps1
+
+
+    Start-DscConfiguration -Path $PSScriptRoot\TestingInherited\ -Wait -Force -Verbose -ea Stop
+
+
+
+}
