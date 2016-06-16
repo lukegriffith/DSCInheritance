@@ -16,7 +16,7 @@ Task -name Test -action {
     Invoke-Pester -Script $PSScriptRoot\StartDscConfig.tests.ps1
 
 
-    Start-DscConfiguration -Path $PSScriptRoot\Artifacts\TestingInherited\ -Wait -Force -Verbose -ea Stop
+    Start-DscConfiguration -Path $PSScriptRoot\Artifacts\TestingInherited\ -Wait -Force -Verbose -ea stop
 
 
 

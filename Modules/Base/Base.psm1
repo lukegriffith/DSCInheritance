@@ -14,13 +14,8 @@ enum Enforce
     Never
 }
 
-
-[DscResource()]
 class Base
 {
-
-    [DscProperty(Key)]
-    [string]$guid;
 
     # A DSC resource must define at least one key property.
     [DscProperty(Mandatory)]
@@ -42,7 +37,7 @@ class Base
         
     } 
 
-    [DateTime]$TimeStarted
+    hidden [DateTime]$TimeStarted
 
 
     <#

@@ -13,26 +13,26 @@ class InheritedResource : Base
 #        $this.TimeStarted = [DateTime]::new()
 #    }
 
-    [void] Set()
-    {        
-    }    
-
-    [InheritedResource]Get() {
-
-
-        Write-Verbose $this.TimeStarted
-
-        return $this
-
-    }
-    [bool] Test()
-    {        
-        return $true
-    }    
-    # Gets the resource's current state.
- 
-
-
+ #   [void] Set()
+ #   {        
+ #   }    
+#
+ #   [InheritedResource]Get() {
+#
+#
+ #       Write-Verbose $this.TimeStarted
+#
+ #       return $this
+#
+ #   }
+ #   [bool] Test()
+ #   {        
+ #       return $true
+ #   }    
+ #   # Gets the resource's current state.
+ #
+#
+#
 
 
 
