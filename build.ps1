@@ -1,6 +1,6 @@
 properties {
     $ComputerName = "srv"
-    #$Cred = (Get-Credential)
+    $Cred = (Get-Credential)
 }
 
 
