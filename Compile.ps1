@@ -1,23 +1,27 @@
-﻿
+﻿param($ComputerName)
 
 configuration TestingInherited {
 
+    param($ComputerName)
 
 
     Import-DscResource -ModuleName InheritedResource
 
 
-    InheritedResource Testing {
+    Node $ComputerName { 
+
+        InheritedResource Testing {
 
 
-        Ensure = 'Present'
-        SettingName = "This Setting"
-        Enforce = 'Always'
+            Ensure = 'Present'
+            SettingName = "This Setting"
+            Enforce = 'Always'
 
+        }
     }
 }
 
 pushd
 cd $PSScriptRoot\Artifacts
-TestingInherited
+TestingInherited -ComputerName $ComputerName
 popd
