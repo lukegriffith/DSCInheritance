@@ -37,7 +37,6 @@ class Base
         
     } 
 
-    hidden [DateTime]$TimeStarted
 
 
     <#
@@ -61,16 +60,25 @@ class Base
 
     #>
 
-    
+    [void] xSet()
+    {
+
+    }
     # Sets the desired state of the resource.
     [void] Set()
     {        
+
+        $this.xSet()
     }        
     
+    [bool] xTest()
+    {
+        return $false
+    }
     # Tests if the resource is in the desired state.
     [bool] Test()
     {        
-        return $true
+        $this.xTest()
     }    
     # Gets the resource's current state.
     [Base] Get()
